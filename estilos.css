@@ -133,23 +133,23 @@ body {
 }
 
 .main__selector {
-    height: auto;
-    z-index: -1;
-    position: relative;
-    /* background-color: lightcoral; */
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: lightcoral;
 }
 
 .main__link{
     /* margin-top: 40vw; */
-    display: inline-block;
-    padding: 0rem  0 0 17rem;
-    /* background-color: lightsalmon; */
+    /* display: inline-block; */
+    /* padding: 0  0 0 10vw; */
+    background-color: lightsalmon;
+
 }
 
 .main__cat{
     height: 20vw;
     border-radius: 50%;
-    opacity: 0.9;
 }
 
 .main__dog{

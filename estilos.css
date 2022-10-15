@@ -136,14 +136,14 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 
 .main__link{
     /* margin-top: 40vw; */
     /* display: inline-block; */
     /* padding: 0  0 0 10vw; */
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
 
 }
 

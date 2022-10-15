@@ -102,7 +102,9 @@ body {
 
 .nav__cart {
     align-self: center;
-    width: 4%;
+    /* width: 3%; */
+    margin-right: 1vw;
+
     /* background-color: yellow; */
 }
 
@@ -113,7 +115,7 @@ body {
 .nav__cart img {
     transition-duration: .3s;
     max-width: 100%;
-    height: auto;
+    height: 2vw;
 }
 
 .nav__cart a img:hover {
@@ -156,6 +158,15 @@ body {
 }
 
 @media only screen and (max-width: 1064px) {
+
+    .nav__logo img {
+        align-self: center;
+        margin-left: 1vw;
+        border: none;
+        padding: 0;
+        height: 15vw;
+        opacity: 0.85;
+    }
     .nav__links {
         display: none;
     }
@@ -166,7 +177,7 @@ body {
     .nav__burger {
         display: block;
         align-self: center;
-        width: 3%;
+        width: 5%;
         margin-right: 3vw;
         margin-left: auto;
     }
@@ -181,7 +192,11 @@ body {
         transform: rotate(130deg);
     }
     
-    .nav__cart{
-        margin-right: 3vw;
+    .nav__cart {
+        margin-right: 4vw;
+    }
+
+    .nav__cart img{
+        height: 5vw;
     }
 } 

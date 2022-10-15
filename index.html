@@ -5,37 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinaria AssistVet</title>
-    <link rel="stylesheet" href="normalize.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
     <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet"></head>
 <body>
-    <header class="hero">
-        <nav class="nav container">
-            <ul class="nav__link nav__link--menu">
-                <video src="video.mp4" autoplay="true" muted="true" loop="true"></video>
-                <li class="nav__item__logo">
-                    <img src="imagenes/logoasistvet.jpeg" alt="Logo">
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links"><span>Donde estamos</span></a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Ofertas</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Productos</a>
-                </li>
-                
-                <img src="" alt="" class="nav__close">
-            </ul>
-        </nav>  
+    <div class="nav__video">
+        <video src="video.mp4" autoplay="true" muted="true" loop="true"></video>
+    </div>
+    <header class="nav__bar">
+        <div class="nav__logo">
+            <a href="index.html">
+                <img src="imagenes/logoasistvet.jpeg" alt="Logo">
+            </a>
+        </div>
+        <div class="nav__title">
+            <a href="index.html"><span class="pet"> PETSHOP &</span> <br> <span class="asist">ASISTENCIA</span> <br> <span class="vet">VETERINARIA</span></a>
+        </div>
+        <div class="nav__links">
+            <a href="productos.html">Productos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Contacto</a>
+            <a href="#">Donde estamos</a>
+        </div>
+        <div class="nav__cart">
+            <a href="cart.html">
+                <img src="imagenes/bx-cart.svg" alt="carrito">
+            </a>
+        </div>
     </header>
+    <main class="main">
+
+        <section>
+            <div class="main__question">
+                <span class="main__question-span">Elije tu mascota</span>
+            </div>
+            <div class="main__selector">
+                <a href="#" class="main__link">
+                    <img src="imagenes/categoriagato_recortada.png" alt="Gatos" class="main__cat">
+                </a>
+                <a href="#" class="main__link">
+                    <img src="imagenes/categoria_perro_recortada.png" alt="Perros" class="main__dog">
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

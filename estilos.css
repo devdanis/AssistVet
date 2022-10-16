@@ -116,6 +116,32 @@ body {
     background-color: rgba(150, 150, 150, 0.9);
 }
 
+#nav__prod {
+    display: none;
+    background-color: rgba(96, 130, 136, 0.7);
+    left: 50vw;
+    /* top: 4vw; */
+    /* height: 100px; */
+    width: 15vw;
+}
+
+#nav__prod a {
+    text-decoration: none;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 1vw 1vw;
+    transition-duration: .3s;
+    transition-property: text-shadow color;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+#nav__prod a:hover {
+    background-color: rgba(88, 88, 88, 0.5);
+}
+
 .nav__burger {
     display: none;
 }

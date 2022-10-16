@@ -11,10 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
 </head>
 <body>
-    <div class="nav__video" id="video">
-        <video src="video.mp4" autoplay="true" muted="true" loop="true"></video>
+    <div class="nav__video">
+        <video src="video2.mp4" autoplay="true" muted="true" loop="true"></video>
     </div>
     <header class="nav__bar">
         <div class="nav__logo">
@@ -26,8 +27,8 @@
             <a href="index.html"><span class="pet"> PETSHOP &</span> <br> <span class="asist">ASISTENCIA</span> <br> <span class="vet">VETERINARIA</span></a>
         </div>
         <div class="nav__links">
-            <a href="#" id="productos">Productos</a>
-            <a href="servicios.html" id="servicios">Servicios</a>
+            <a href="#" onmouseenter="prod()" onmouseleave="prod()">Productos</a>
+            <a href="servicios.html">Servicios</a>
             <a href="#">Ofertas</a>
             <a href="#">Contacto</a>
             <a href="#">Donde estamos</a>
@@ -55,21 +56,10 @@
             <a href="gatos.html">Gatos</a>
         </div>
     <main class="main">
-
         <section>
-            <div class="main__question">
-                <span class="main__question-span">Elije tu mascota</span>
-            </div>
-            <div class="main__selector">
-                <a href="gatos.html" class="main__link">
-                    <img src="imagenes/categoriagato_recortada.png" alt="Gatos" class="main__cat">
-                </a>
-                <a href="perros.html" class="main__link">
-                    <img src="imagenes/categoria_perro_recortada.png" alt="Perros" class="main__dog">
-                </a>
+            <div>
             </div>
         </section>
     </main>
-    <script src="index.js"></script>
 </body>
 </html>

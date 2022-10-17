@@ -14,6 +14,7 @@ body {
 .nav__video{
     position: absolute;
     z-index: -100;
+    width: 100%;
 }
 
 .nav__video video {
@@ -28,7 +29,7 @@ body {
     display: flex;
     /* position: absolute; */
     width: 100%;
-    background-color: rgba(246, 241, 241, 0.259);
+    background-color: rgba(255, 255, 255, 0.314);
 }
 
 .nav__bar div:nth-child(2){
@@ -65,7 +66,7 @@ body {
     text-decoration: none;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.6vw;
-    text-shadow: 2px 2px 2px #565656;
+    text-shadow: 4px 2px 4px #000000;
     
     /* text-align: center; */
 }
@@ -118,7 +119,7 @@ body {
 
 #nav__prod {
     display: none;
-    background-color: rgba(96, 130, 136, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     left: 50vw;
     /* top: 4vw; */
     /* height: 100px; */
@@ -130,12 +131,12 @@ body {
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3vw;
-    color: rgb(255, 255, 255);
+    color: rgb(35, 35, 35);
     text-align: left;
     padding: 1vw 1vw;
     transition-duration: .3s;
     transition-property: text-shadow color;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 
 #nav__prod a:hover {

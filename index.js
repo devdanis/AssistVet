@@ -27,7 +27,7 @@ const btnProductos = document.getElementById('productos');
 const menuProductos = document.getElementById('nav__prod');
 const btnServicios = document.getElementById('servicios');
 const tocarBody = document.getElementsByTagName ("body")[0];
-
+const tocarVideo = document.getElementsByTagName ("video")[0];
 
 btnProductos.addEventListener ('mouseover', () => {
     menuProductos.style.display = "block";
@@ -44,5 +44,9 @@ btnServicios.addEventListener ('mouseover', () => {
 });
 
 tocarBody.addEventListener ("click", () => {
+    menuProductos.style.display = "none";
+});
+
+tocarVideo.addEventListener ("click", () => {
     menuProductos.style.display = "none";
 });

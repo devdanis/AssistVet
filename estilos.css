@@ -954,6 +954,21 @@ footer a{
         margin-top: 20px;
         font-size: 15px;
     }
+
+    .cat_img-focus_img{
+        height: 60%;    
+    }    
+
+    .cat_img-focus_bx-x{
+        height: 10vw;
+        top: 12vw;
+        right: 8vw;
+    }
+
+    .cat_img-focus_leyenda{
+        font-size: 20px;
+        bottom: 80px;
+    }
     
     #contacto {
         left: 0;
@@ -997,11 +1012,6 @@ footer a{
     }
     .contactanos{
         font-size: 15px;
-    }
-
-    .cat_img-focus_leyenda{
-        font-size: 15px;
-        bottom: 45px;
     }
 
     .lista_servicios{

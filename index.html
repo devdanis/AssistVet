@@ -29,6 +29,19 @@
             </div>
         </div>
     </header>
+    <section class="smallscreen_carrusel-contenido" id="smallscreen_carrusel-contenido">
+        <div class="smallscreen_carrusel-caja" id="smallscreen_carrusel-caja">
+            <div class="smallscreen_carrusel-elemento">
+                <img src="imagenes/perroconjeringa.jpg" alt="">
+            </div>
+            <div class="smallscreen_carrusel-elemento">   
+                <img src="imagenes/vacunacion-perro-gatos.jpg" alt="">
+            </div>
+            <div class="smallscreen_carrusel-elemento">   
+                <img src="imagenes/vacunas_mascotas_respuesta_web.jpg" alt="">                        
+            </div>
+        </div>
+    </section>
     <!-- <header>
         <img src="imagenes/categoria_perro.jpg" alt="">
     </header> -->
@@ -49,7 +62,7 @@
         <div class="nav__links">
             <a href="#" id="productos">Productos</a>
             <a href="servicios.html" id="servicios">Servicios</a>
-            <a href="#">Ofertas</a>
+            <a href="index.html#ofertas">Ofertas</a>
             <a href="#contacto">Contacto</a>
             <a href="#dondeestamos">Donde estamos</a>
         </div>
@@ -68,27 +81,42 @@
         </div>
     </nav>
 
-    <!-- Aca empieza los menues de pantallas pequeñas -->
-        <div class= "nav__menu" id="nav__menu">
-            <a href="#">Productos</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="#">Ofertas</a>
-            <a href="#contacto">Contacto</a>
-            <a href="#dondeestamos">Donde estamos</a>
-        </div>
-    <!--  Aca termina la parte de pantallas pequeñas -->
-    <!-- Aca comienza el submenu de productos  -->
-        <div class= "nav__prod" id="nav__prod">
-            <a href="perros.html">Productos para Perros</a>
-            <a href="gatos.html">Productos para Gatos</a>
-        </div>
-
+    <!-- Aqui empieza los menues de pantallas pequeñas -->
+    <div class= "nav__menu" id="nav__menu">
+        <a href="javascript:void(0);" onclick="submenuAlimentos()">Productos</a>
+        <a href="javascript:void(0);" onclick="submenuServicios()">Servicios</a>
+        <a href="index.html#ofertas">Ofertas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#dondeestamos">Donde estamos</a>
+    </div>
+    <div class= "nav__menu_submenu-alimentos" id="nav__menu_submenu-alimentos">
+        <a href="perros.html">Alimento para Perros</a>
+        <a href="gatos.html">Alimento para Gatos</a>
+    </div>
+    <div class= "nav__menu_submenu-servicios" id="nav__menu_submenu-servicios">
+        <a href="servicios.html#vacunas">Vacunas</a>
+        <a href="servicios.html#controlesmedicos">Controles Medicos</a>
+        <a href="servicios.html#emergencias">Emergencias</a>
+    </div>
+    <!--  Aqui termina la parte de pantallas pequeñas -->
+    <!-- Aqui comienza el submenu de productos y Servicios  -->
+    <div class= "nav__prod" id="nav__prod">
+        <a href="perros.html">Alimento y accesorios para Perros</a>
+        <a href="gatos.html">Alimento y accesorios para Gatos</a>
+    </div>
+    <div class= "nav__serv" id="nav__serv">
+        <a href="servicios.html#vacunas">Vacunas</a>
+        <a href="servicios.html#controlesmedicos">Controles Medicos</a>
+        <a href="servicios.html#controlesmedicos">Emergencias</a>
+    </div>
+    <!-- Aqui termina el submenu de productos y Servicios  -->
     <main class="main">
 
         <section>
-            <div class="main__question">
-                <span class="main__question-span">Elije tu mascota</span>
-            </div>
+            <!-- <div class="main__question"> -->
+                <!-- <span class="main__question-span">Por favor seleccione su mascota</span> -->
+                <p class="p_seleccionMascota">Por favor seleccione su mascota</p>
+            <!-- </div> -->
             <div class="main__selector">
                 <a href="gatos.html" class="main__link">
                     <img src="imagenes/categoriagato_recortada.png" alt="Gatos" class="main__cat">
@@ -98,7 +126,27 @@
                 </a>
             </div>
         </section>
-        <p class="contactanos"> <br><br><br> Contactanos</p>
+        <article>
+            <h2 class="ofertas_text_h2" id="ofertas">
+                Ofertas que no debes perderte! <br> 20% de descuentos en estos alimentos!
+            </h2>
+            <div class="gallery_containerGrid">
+                <img src="imagenes/148066-removebg-preview.png" alt="Especial Old Prince Adultos" class="gallery img-1">
+                <img src="imagenes/156157-removebg-preview.png" alt="Royal Canin Adultos Medium" class="gallery img-2">
+                <img src="imagenes/150018-removebg-preview.png" alt="Purina Excellent Adultos" class="gallery img-3">
+                <img src="imagenes/mini-puppy-removebg-preview.png" alt="Royal Canin Mini Puppy" class="gallery img-4">
+                <img src="imagenes/7613287119605_1.png" alt="Especial Purina Proplan Adultos" class="gallery img-5">
+                <img src="imagenes/old-prince-cordero-removebg-preview.png" alt="Old Prince Adultos" class="gallery img-6">
+                <div class="cat_img-focus_container">
+                    <img src="" alt="" class="cat_img-focus_img">
+                    <img src="imagenes/bx-x.svg" alt="Cerrar" class="cat_img-focus_bx-x">
+                    <p class="cat_img-focus_leyenda"></p>
+                </div>
+            </div>
+        </article>
+        <section class="contactanos_container" id="contactanos_container">
+            <h2 class="contactanos">Contactanos</h2>
+        </section>
         <article id="form">
             <div id="contacto">
                 <form action="https://formspree.io/f/moqbndob" method="POST">
@@ -129,16 +177,16 @@
     </main>
     <footer class="footer">
         <div>
-            <img src="imagenes/logoasistvet.jpeg" alt="">
+            <img class="footer_logo" src="imagenes/logoasistvet.jpeg" alt="">
         </div>
         <div class="footer__contactanos">
-            <a href="Contactanos">Contactanos</a>
+            <a href="index.html#contactanos_container">Contactanos</a>
         </div>
         <!-- <div>
             <a href="Contactanos">Whatsapp</a>
         </div> -->
         <div class="redes">
-            <a class="redes__a" href="#">
+            <a class="redes__a" href="https://www.facebook.com/asistvetpinamar/">
                 <img src="imagenes/bxl-facebook-circle.svg" alt="">
             </a>
             <a class="redes__a href="#">
@@ -150,5 +198,6 @@
         </div>
     </footer>
     <script src="index.js"></script>
+    <script src="gatos.js"></script>
 </body>
 </html>

@@ -762,9 +762,10 @@ textarea{
 
 .contactenos{
     text-align: center;
-    margin: 2px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     color: #000;
-    font-size: 1vw;
+    font-size: 1.5rem;
     font-family: var(--fuente);
 }
 
@@ -994,6 +995,7 @@ footer a{
     }
 
     footer{
+        bottom: 0;
         width: 100%;
     }
 
@@ -1037,6 +1039,12 @@ footer a{
     
     .lorem{
         font-size: 15px;
+    }
+
+    .contactenos{
+        text-align: center;
+        margin: 10px;
+        font-size: 3vw;
     }
 } 
 

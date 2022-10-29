@@ -299,6 +299,7 @@ body {
     font-size: 2vw;
     font-family: var(--fuente);
     text-align: center;
+    z-index: -100;
 }
 
 #contacto {
@@ -975,6 +976,7 @@ footer a{
         left: 0;
         margin: 3vw;
         width: 100%;
+        z-index: -100;
     }
     
     #contacto form label {

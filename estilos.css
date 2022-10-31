@@ -269,12 +269,26 @@ body {
 .main__cat{
     height: 20vw;
     border-radius: 50%;
+    filter: grayscale(0.3);
 }
 
 .main__dog{
     height: 20vw;
     border-radius: 50%;
+    filter: grayscale(0.3);
     opacity: 0.9;
+}
+
+.img_seleccionMascota{
+    transition: all .3s;
+}
+
+.img_seleccionMascota:hover{
+    transform: scale(1.05);
+    filter: grayscale(0);
+    filter: brightness(1.05);
+    filter: contrast(1.2);
+    
 }
 
 .ofertas_text_h2{
@@ -944,12 +958,14 @@ footer a{
     .main__cat{
         height: 30vw;
         border-radius: 50%;
+        filter: grayscale(0);
     }
     
     .main__dog{
         height: 30vw;
         border-radius: 50%;
         opacity: 0.9;
+        filter: grayscale(0);
     }
 
     .ofertas_text_h2{
